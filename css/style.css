@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    opacity: 0.8;
+}
+nav .row{
+    padding: 10px 0;
+    width: 77%;
+}
+nav .row ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+/* margin 20px for nav links */
+nav li a{
+    margin: 20px;
+}
+li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.8;
+}
+li a img{
+    width: 16px;
+}
+nav li a:hover{
+    
+    font-weight: 300;
+    opacity: 1;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    background:#fafafa;
+}
+.inch,.size, .title, .description, .link{
+    text-align: center;
+}
+.inch{
+    margin-top: 50px;
+}
+.size{
+    font-size: 17px;
+    padding-top: 20px;
+    color:  #86868b;
+}
+.title {
+    font-size: 56px;
+    font-weight: 700;
+}
+.description{
+    font-size:26px;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.link a:last-child{
+    color: #06c;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding-left: 30px;
+}
+.link a:after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f105";
+    padding-left: 5px;
+    padding-top: 2px;
+}
+.container2{
+    background-image: url(../images/home/iphone11-pro-bg.jpg);
+}
+.container2 .title,
+.container3 .title{
+    padding-top: 56px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.container2 .description{
+    font-size: 26px;
+}
+.container2{
+    text-align: center;
+    color: #fcf8f8 !important;
+}
+.container3{
+    background-image: url(../images/home/iphone11-bg.jpg);
+}
+.container2, .container3{
+    display: grid;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:800px;
+}
+/* fourth section */
+.container4,.container5,.container6{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+.container6{
+    margin-bottom: 0 !important;
+}
+.container4 .card1{
+    background-image: url(../images/home/watch-series-5.jpg);
+}
+.container4 .card2{
+    background-image: url(../images/home/apple-card.jpg);
+}
+.container5 .card3{
+    background-image: url(../images/home/apple-tv-background.jpg);
+}
+.container4 .card1,.container4 .card2,
+.container5 .card3,
+.container5 .card4{
+    flex: 0 0 48.5%;
+    width: 48.5%;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    padding-top: 54px;
+    background-color: #fafafa;
+}
+.container5 .card4{
+    background-image: url(../images/home/air-pods.jpg);
+    background-position-y: bottom;
+    background-color: #000000;
+    color: #fafafa;
+}
+.card4 .description{
+    color: #bdbdc2 !important;
+}
+.container6 .card5{
+    background-image: url(../images/home/mac-laptop.jpg);
+    background-size: 75% !important;
+    background-position-y: bottom;
+    
+}
+.container5 .card3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container5 .card3 .watch{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.container6 .card6{
+    background-image: url(../images/home/new-ipad.jpg);
+    
+}
+.container6 .card5,
+.container6 .card6{
+    flex: 0 0 48.5%;
+    width: 48.5%;
+    text-align: center;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-color: #fafafa;
+    height: 700px;
+    padding-top: 54px;
+}
+.fourth .description{
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #050505;
+    font-size: 20px;
+}
+/* footer section */
+footer{
+    background-color: #fafafa;
+}
+footer .internal-footer{
+    width: 75%;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+footer .internal-footer li{
+    list-style: none;
+}
+footer .internal-footer li a{
+    color: rgb(29, 29, 30);
+    font-weight: 400;
+    font-size: 13px;
+}
+footer .internal-footer .first-container{
+    border-bottom: 1px solid #d2d2d7;
+    color: #86868b;
+    padding: 17px 0 20px;
+    font-size: 12px;
+}
+footer .internal-footer .first-container a{
+    text-decoration: none;
+    color: #86868b;
+}
+.internal-footer a:hover {
+	text-decoration: underline;
+}
+footer .internal-footer .second-container{
+    display: flex;
+    justify-content: space-between;
+    color: #1d1d1f;
+    margin-top: 20px;
+}
+.second-container ul{
+    padding-bottom: 20px;
+}
+.second-container ul li{
+    padding: 3px 0;
+
+}
+.second-container ul li a{
+    font-size: 12px;
+}
+.second-container h3{
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 3px;
+    color: #1d1d1f;
+}
+hr{
+    margin: 20px 0;
+}
+footer .internal-footer .fourth-container{
+    display: flex;
+    justify-content: space-between;
+}
+.fourth-container p,
+.third-container p{
+    font-size: 12px;
+}
+
+.last-li li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+    box-shadow: 1px 0 rgb(133, 138, 139);
+}
+.last-li li:last-child{
+    box-shadow: none;
+}
+.last-li li a{
+    padding-right: 0px;
+}
+.last{
+    display: flex;
+    font-size: 12px;
+}
+@media screen and (max-width: 760px) {
+    .container4,.container5,.container6{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 15px auto;
+        height: 100ch;
+    }
+    .container4 .card1,
+    .container4 .card2,
+    .container5 .card3,
+    .container5 .card4,
+    .container6 .card5,
+    .container6 .card6{
+        flex: 100%;
+        width: 100%;
+    }
+    .container5 .card4{
+        background-color: #000000;
+    }
+}
